@@ -1,0 +1,19 @@
+.avatar {
+    width: 7rem;
+    height: 7rem;
+    border-radius: 50%;
+    border: 2px solid lightblue;
+    cursor: pointer;
+}
+
+.avatar:hover {
+    border: 4px solid blue;
+}
+
+.wrapper {
+    padding: 2rem;
+}
+
+.roles {
+    margin-top: 4rem;
+}

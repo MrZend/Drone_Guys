@@ -1,0 +1,37 @@
+.back {
+    padding-top: 3rem;
+    padding-right: 0.8rem;
+}
+
+.wrapper {
+    margin-left: 5rem;
+    border: gray 1px solid;
+    padding-bottom: 3rem;
+}
+
+.create-button {
+    background: #2962FF;
+    box-shadow: none;
+    border: none;
+    height: 100%;
+    width: 10rem;
+    font-size: 1.4rem;
+}
+
+.create-button:hover {
+    background: #2c43a8
+}
+
+.create-button:focus {
+    background: #682773;
+    box-shadow: none
+}
+
+.create-button:active {
+    background: #682773;
+    box-shadow: none
+}
+
+.teams {
+    margin-left: .75rem;
+}

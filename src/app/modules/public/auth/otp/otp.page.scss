@@ -1,0 +1,176 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+/*=============== VARIABLES CSS ===============*/
+
+/*========== Colors ==========*/
+/*Color mode HSL(hue, saturation, lightness)*/
+$white-color: hsl(0, 0%, 100%);
+$black-color: hsl(0, 0%, 0%);
+$green-color: hsl(113, 52%, 34%);
+
+/*========== Font and typography ==========*/
+/*.5rem = 8px | 1rem = 16px ...*/
+$body-font: "Consolas", sans-serif;
+$h1-font-size: 2rem;
+$h2-font-size: 1rem;
+$normal-font-size: 1rem;
+$small-font-size: .813rem;
+
+
+/*=============== BASE ===============*/
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body,
+input,
+button,
+h1 {
+  font-family: $body-font;
+  font-size: $normal-font-size;
+}
+
+a {
+  text-decoration: none;
+}
+
+.otp__bg-img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/*=============== otp ===============*/
+.otp {
+  position:relative;
+  height: 100vh;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.otp__bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.otp__form {
+  position: relative;
+  margin-inline: 1.5rem;
+  background-color: hsla(111, 43%, 27%, 0.452);
+  border: 2px solid hsl(0, 8%, 75%);
+  padding: 2.5rem 1rem;
+  color: $white-color;
+  border-radius: 1rem;
+  backdrop-filter: blur(16px);
+}
+
+.otp__title {
+  text-align: center;
+  font-size: $h1-font-size;
+  margin-bottom: 1.25rem;
+}
+
+.otp__text {
+    text-align: center;
+    font-size: $h2-font-size;
+    font-family: $body-font;
+    font-weight: 500;
+    margin-bottom: 0;
+}
+
+.otp__inputs,
+.otp__box {
+  display: grid;
+}
+
+.otp__inputs {
+  row-gap: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.otp__box {
+  grid-template-columns: 1fr max-content;
+  column-gap: .75rem;
+  align-items: center;
+  border: 2px solid hsla(0, 0%, 100%, .7);
+  padding-inline: 1.25rem;
+  border-radius: 4rem;
+}
+
+.otp__input,
+.otp__button {
+  border: none;
+  outline: none;
+}
+
+.otp__input {
+  width: 100%;
+  background: none;
+  color: $white-color;
+  padding-block: 1rem;
+}
+
+.otp__input::placeholder {
+  color: $white-color;
+  transition: 200ms;
+}
+
+.otp__input:focus::placeholder {
+  color: transparent;
+  transition: 200ms;
+}
+
+.otp__box i {
+  font-size: 1.25rem;
+}
+
+.otp__resend {
+  display: flex;
+  align-items:center;
+  justify-content:space-between;
+  gap: .5rem;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+.otp__resend>a:hover {
+    text-decoration: underline;
+}
+
+.otp__button {
+  width: 100%;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  background-color: $white-color;
+  border-radius: 4rem;
+  color: $black-color;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.otp__button:hover {
+  background-color: $green-color;
+  color: $white-color;
+  transition: 25ms;
+}
+
+/*=============== BREAKPOINTS ===============*/
+/* For medium devices */
+@media screen and (min-width: 576px) {
+  .otp {
+    justify-content: center;
+  }
+  .otp__form {
+    width: 420px;
+    padding-inline: 2.5rem;
+  }
+  .otp__title {
+    margin-bottom: 2rem;
+  }
+}

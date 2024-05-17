@@ -1,0 +1,35 @@
+<div class="back">
+    <div class=" rounded bg-white d-flex flex-column align-items-center wrapper">
+          <div class="tracker w-100">
+                <app-team-tracker></app-team-tracker>
+          </div>
+          <div class="main w-100">
+            <nav>
+                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                  <button class="nav-link active" id="nav-details-tab" data-bs-toggle="tab" data-bs-target="#nav-details" type="button" role="tab" aria-controls="nav-details" aria-selected="true">Команда</button>
+                  <button class="nav-link" id="nav-notifications-tab" data-bs-toggle="tab" data-bs-target="#nav-notifications" type="button" role="tab" aria-controls="nav-notifications" aria-selected="false">Сповіщення</button>
+                  <button class="nav-link" id="nav-chat-tab" data-bs-toggle="tab" data-bs-target="#nav-chat" type="button" role="tab" aria-controls="nav-chat" aria-selected="false">Чат</button>
+                  <button class="nav-link" id="nav-manager-tab" data-bs-toggle="tab" data-bs-target="#nav-manager" type="button" role="tab" aria-controls="nav-manager" aria-selected="false">Адмінка менеджера</button>
+                  <button class="nav-link" id="nav-member-tab" data-bs-toggle="tab" data-bs-target="#nav-member" type="button" role="tab" aria-controls="nav-member" aria-selected="false">Адмінка учасника</button>
+                </div>
+            </nav>
+              <div class="tab-content" id="nav-tabContent">
+                <div class="tab-pane fade show active" id="nav-details" role="tabpanel" aria-labelledby="nav-details-tab">
+                    <app-team-details></app-team-details>
+                </div>
+                <div class="tab-pane fade" id="nav-notifications" role="tabpanel" aria-labelledby="nav-notifications-tab">
+                    Сповіщення
+                </div>
+                <div class="tab-pane fade chat-wrapper" id="nav-chat" role="tabpanel" aria-labelledby="nav-chat-tab">
+                    Чат
+                </div>
+                <div class="tab-pane fade chat-wrapper" id="nav-manager" role="tabpanel" aria-labelledby="nav-manager-tab">
+                    Адмінка менеджера
+                </div>
+                <div class="tab-pane fade chat-wrapper" id="nav-member" role="tabpanel" aria-labelledby="nav-member-tab">
+                    Адмінка учасника
+                </div>
+            </div>
+          </div>
+      </div>
+  </div>

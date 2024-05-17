@@ -1,0 +1,46 @@
+.detail-button {
+    background: transparent;
+    box-shadow: none;
+    border: 1px solid #2c43a8;
+    color: #2c43a8;
+    width: 8rem;
+    font-size: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.detail-button:hover {
+    background: #2c43a8;
+    color:white;
+}
+
+.detail-button:focus {
+    background: #2c43a8;
+    color:white;
+}
+
+.detail-button:active {
+    background: #2c43a8;
+    color:white;
+}
+
+.avatar {
+    width: 2.5rem;
+    height: 2.5rem;
+    padding-left: -.5rem;
+    border-radius: 50%;
+    border: 2px solid lightblue;
+    opacity: 30%;
+}
+
+.team-logo {
+    margin: 0;
+    width: 3.5rem;
+    height: 3.5rem;
+    background-color: black;
+    border-radius: 50%;
+}
+
+.date {
+    padding-top: 0.7rem;
+}

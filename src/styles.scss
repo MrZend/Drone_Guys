@@ -1,1 +1,19 @@
 /* You can add global styles to this file, and also import other style files */
+@import "resets/normalize.scss";
+@import "resets/reset.local.scss";
+@import "resets/typography.scss";
+
+
+/* Importing Bootstrap SCSS file. */
+@import 'bootstrap/scss/bootstrap';
+@import 'cropperjs/dist/cropper.css';
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.mat-mdc-dialog-container {
+    --mdc-dialog-container-shape: 20px;
+}

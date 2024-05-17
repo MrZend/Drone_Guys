@@ -1,0 +1,58 @@
+
+    <aside id="sidebar" class=""[ngClass]="{'expand': menuOpen}" @openClose>
+        <div class="d-flex">
+            <button class="toggle-btn" (click)="menuOpen = !menuOpen" type="button">
+                <mat-icon class="white-icon" fontIcon="home"></mat-icon>
+            </button>
+            <div class="sidebar-logo">
+                <a [routerLink]="['profile']">DroneGuys</a>
+            </div>
+        </div>
+        <ul class="sidebar-nav">
+            <li class="sidebar-item">
+                <a class="sidebar-link collapsed has-dropdown" data-bs-toggle="collapse"
+                    data-bs-target="#profile" aria-expanded="false" aria-controls="profile">
+                    <mat-icon class="white-icon" fontIcon="face"></mat-icon>
+                    <span>Профіль</span>
+                </a>
+                <ul id="profile" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
+                    <li class="sidebar-item">
+                        <a [routerLink]="['profile']" class="sidebar-link">Інформація</a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a [routerLink]="['myteams']" class="sidebar-link">Мої Команди</a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link">Статистика</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="sidebar-item">
+                <a [routerLink]="['teams']" class="sidebar-link">
+                    <mat-icon class="white-icon" fontIcon="group"></mat-icon>
+                    <span>Команди</span>
+                </a>
+            </li>
+            <li class="sidebar-item">
+                <a [routerLink]="['orders']" class="sidebar-link">
+                    <mat-icon class="white-icon" fontIcon="shelves"></mat-icon>
+                    <span>Замовлення</span>
+                </a>
+            </li>
+        </ul>
+        <div class="sidebar-footer">
+            <a href="#" class="sidebar-link">
+                <mat-icon class="white-icon" fontIcon="notifications"></mat-icon>
+                <span>Повідомлення</span>
+            </a>
+            <a [routerLink]="['settings']" class="sidebar-link">
+                <mat-icon class="white-icon" fontIcon="settings"></mat-icon>
+                <span>Налаштування</span>
+            </a>
+            <a href="#" class="sidebar-link">
+                <mat-icon class="red-icon" fontIcon="logout"></mat-icon>
+                <span>Вийти</span>
+            </a>
+        </div>
+    </aside>
+

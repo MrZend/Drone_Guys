@@ -1,0 +1,54 @@
+:host {
+    display: block;
+    border-radius: 50% !important;
+    padding: 16px;
+  }
+
+.join-button {
+    background: transparent;
+    box-shadow: none;
+    border: 1px solid #2c43a8;
+    color: #2c43a8;
+    width: 8rem;
+    font-size: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.join-button:hover {
+    background: #2c43a8;
+    color:white;
+}
+
+.join-button:focus {
+    background: #2c43a8;
+    color:white;
+}
+
+.join-button:active {
+    background: #2c43a8;
+    color:white;
+}
+
+.avatar {
+    width: 2.5rem;
+    height: 2.5rem;
+    padding-left: -.5rem;
+    border-radius: 50%;
+    border: 2px solid lightblue;
+    opacity: 30%;
+}
+
+.team-logo {
+    width: 6.5rem;
+    height: 6.5rem;
+    background-color: black;
+}
+
+.date {
+    padding-top: 0.7rem;
+}
+
+.info-wrapper {
+    margin-top: 3rem;
+}

@@ -1,0 +1,61 @@
+@import '../../../../../../../variables';
+
+.avatar-container {
+    position: relative;
+    width: fit-content;
+}
+
+.box-shadow-avatar{
+    box-shadow: 0 10px 20px 20px #6c93001a;
+}
+
+.image-container {
+    height: 200px;
+    width: 200px;
+    z-index: 1;
+    border-radius: 50%;
+    background-color: #fff;
+    background-position: center;
+    background-size: cover;
+
+    &.avatar-placeholder{
+        background-image: url('../../../../../../../assets/img/avatar-placeholder.png');
+    }
+}
+
+.icon-wrapper {
+    position: absolute;
+    height: 32px;
+    width: 32px;
+    padding: .35rem;
+    background-color: $accent-color;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    right: 0;
+    top: 65%;
+    z-index: 2;
+    cursor: pointer;
+
+    &:hover {
+        transition: all .25s;
+        background-color: $accent-color-darken;
+    }
+
+    .icon {
+        color: white;
+        font-size: 1.4rem;
+    }
+
+    label {
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    input[type='file'] {
+        display: none;
+    }
+}
